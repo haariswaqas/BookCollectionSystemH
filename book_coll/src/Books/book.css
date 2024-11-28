@@ -1,0 +1,60 @@
+.bookContainer {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center align content */
+  justify-content: space-between;
+  background-color: #f9f9f9; /* Softer background */
+  border: 1px solid #ccc; /* Slightly darker border */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow for better depth */
+  overflow: hidden; /* Clip content if it overflows */
+  max-width: 320px; /* Increased max width for the card */
+  margin: 20px auto; /* Center cards and maintain spacing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.bookContainer:hover {
+  transform: scale(1.08); /* Slightly larger hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Image styling */
+.bookContainer img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 1px solid #ddd; /* Add a separator below the image */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+/* Body section styling */
+.body {
+  padding: 20px; /* Increase padding for better spacing */
+  text-align: center; /* Center align text */
+}
+
+/* Title styling */
+.body h2 {
+  font-size: 1.3rem; /* Slightly larger font size */
+  color: #222; /* More distinct color for the title */
+  margin-bottom: 10px; /* Increased spacing */
+  font-weight: bold; /* Make the title stand out */
+}
+
+/* Author and other details */
+.body h3 {
+  font-size: 1rem; /* Slightly larger font size */
+  color: #555; /* Improved readability for secondary text */
+  margin: 6px 0; /* Better spacing */
+}
+
+/* Link styling */
+.body a {
+  text-decoration: none; /* Remove underline from links */
+  color: #0056b3; /* Slightly darker link color for better visibility */
+  font-weight: bold;
+}
+
+.body a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #003580; /* Darker shade for hover effect */
+}
